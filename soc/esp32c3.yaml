@@ -1,0 +1,36 @@
+# ESP32-C3 memory schema
+
+memory:
+  name: SRAM0
+  size: 16k
+  bus:
+    name: IRAM
+    start: 0x4037c000
+    display: left
+
+memory:
+  name: SRAM1
+  size: 384k
+  bus:
+    name: IRAM
+    start: 0x40380000
+    display: left
+  bus:
+    name: DRAM
+    start: 0x3fc80000
+    display: right
+
+separator:
+  name: Mapped memory
+
+memory:
+  name: CACHE
+  size: 16M
+  bus:
+    name: IROM
+    start: 0x42000000
+    display: left
+  bus:
+    name: DROM
+    start: 0x3c000000
+    display: right

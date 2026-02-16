@@ -1,0 +1,23 @@
+# Platform linker segment definitions for Zephyr build.
+# Same notation as SoC config: repeated top-level "segment:" entries.
+# begin/end are symbol names; input sections are derived from the map file.
+
+segment:
+  name: iram0_0_seg
+  begin: _init_start
+  end: _iram_end
+
+segment:
+  name: dram0_0_seg
+  begin: _data_start
+  end: _end
+
+segment:
+  name: irom0_0_seg
+  begin: _stext
+  end: _etext
+
+segment:
+  name: drom0_0_seg
+  begin: _image_rodata_start
+  end: _image_rodata_end

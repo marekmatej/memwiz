@@ -1,0 +1,30 @@
+# ESP32 memory schema
+
+memory:
+  name: SRAM0
+  size: 192k
+  bus:
+    name: IRAM
+    start: 0x40070000
+    display: left
+
+memory:
+  name: SRAM1
+  size: 128k
+  bus:
+    name: IRAM
+    start: 0x400a0000
+    display: left
+  bus:
+    name: DRAM
+    start: 0x3ffe0000
+    display: right
+    reversed: true 
+
+memory:
+  name: SRAM2
+  size: 200k
+  bus:
+    name: DRAM
+    start: 0x3ffae000
+    display: right

@@ -1,0 +1,45 @@
+# ESP32-S3 memory schema
+
+memory:
+  name: SRAM0
+  size: 32k
+  bus:
+    name: IRAM
+    start: 0x40370000
+    display: left
+
+memory:
+  name: SRAM1
+  size: 416k
+  bus:
+    name: IRAM
+    start: 0x40378000
+    display: left
+  bus:
+    name: DRAM
+    start: 0x3fc88000
+    display: right
+
+memory:
+  name: SRAM2
+  size: 64k
+  bus:
+    name: DRAM
+    start: 0x3fcf0000
+    display: right
+
+separator:
+  name: Mapped memory
+
+memory:
+  name: CACHE
+  size: 32M
+  bus:
+    name: IROM
+    start: 0x42000000
+    display: left
+  bus:
+    name: DROM
+    start: 0x3c000000
+    display: right
+

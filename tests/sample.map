@@ -1,0 +1,10 @@
+Linker script and memory map
+ 0x40370000                _stext = .
+ 0x40378000                _init_start = .
+ 0x403d0000                _iram_end = .
+ 0x403e0000                _etext = .
+ 0x3fc88000                __data_start = .
+ 0x3fc88000                _data_start = .
+ 0x3fc90000                _image_rodata_start = .
+ 0x3fca0000                _image_rodata_end = .
+ 0x3fce0000                _end = .
